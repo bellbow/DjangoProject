@@ -1,0 +1,22 @@
+{% extends "pizzas/basic.html" %}
+
+{% block content %}
+
+<h1>{{pizza}}</h1>
+
+
+<img src="{{ pizza.pizza_image.url }}" height="auto" width="200" >
+
+<ul>
+    {% for topping in toppings %}
+
+    <li>{{ topping }}</li>
+    {% empty %}
+    <li> There's no-a toppings on your pizza.  Mama Mia!</li>
+    {% endfor %}
+</ul>
+
+<a href="{% url 'pizzas:comment' %}">Leave a comment</a>
+
+
+{% endblock content %}

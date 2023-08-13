@@ -1,0 +1,18 @@
+{% extends "pizzas/basic.html" %}
+
+{% block content %}
+
+<h1>Welcome to the Pizzeria</h1>
+
+<p>Leave a comment:</p>
+
+<form action="{% url 'pizzas:comment' %}" method="post">
+
+    {% csrf_token %}
+
+    {{form.as_p}}
+
+    <button name="submit">Leave Comment</button>
+</form>
+
+{% endblock content %}
