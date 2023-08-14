@@ -1,11 +1,149 @@
+<style>
+    h1{
+    padding : 0;
+    margin : 0; 
+    text-align: center;   
+  }
+
+    .subhead{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    font-style: italic;
+    text-align: center;
+  }
+
+    hr{
+    border-color: black;
+    }
+
+    p{
+    padding : 0;
+    margin : 0;
+    line-height : 20px;
+  }
+
+    .right {
+    float: right;
+    margin: 5px;
+  }
+    .foot {
+    float: left;
+    margin: 5px;
+    }
+
+    .column {
+    padding: 5px;
+  }
+  
+    .row{
+    display: flex;
+  }
+    .gallery{
+    border: 2px dashed darkred;
+    background-color:darkolivegreen;
+  }
+</style>
+
+<div style="background-color: antiquewhite; padding: 0; margin: 0;">
 {% extends "pizzas/basic.html" %}
 
 {% block content %}
 
-<h1>Welcome to the Pizzeria</h1>
 
-<p>
-    We have a variety of pizzas with all sorts of toppings!
-</p>
+<h1>Welcome to Mario's Pizzeria</h1>
+<p class="subhead"> Serving you piping hot pizzas since 1957</p>
+<hr>
+</div>
 
+<body style="background-color:burlywood;">
+    <p style="text-align: center;">We have a variety of pizzas with all sorts of toppings!</p>
+    <br>
+
+    <img src="https://clipart-library.com/img1/771314.png" width="300" height="auto" class="right">
+
+    <table>
+        <tr>
+            <th>Day</th>
+            <th>Hours</th>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td>10:00 AM - 11:00 PM</td>
+        </tr>
+        <tr>
+            <td>Tuesday</td>
+            <td>10:00 AM - 11:00 PM</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td>10:00 AM - 11:00 PM</td>
+        </tr>
+        <tr>
+            <td>Thursday</td>
+            <td>CLOSED</td>
+        </tr>
+        <tr>
+            <td>Friday</td>
+            <td>10:00 AM - 12:00 AM</td>
+        </tr>
+        <tr>
+            <td>Saturday</td>
+            <td>10:00 AM - 12:00 AM</td>
+        </tr>
+        <tr>
+            <td>Tuesday</td>
+            <td>12:00 PM - 10:00 PM</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <div class="gallery">
+
+        <div class="row">
+            <div class="column">
+                <img src="https://frankspizzaplace.com/wp-content/uploads/2017/05/franks-pizzeria-fresh-ingredients.jpg" width="auto" height="150">
+            </div>
+
+            <div class="column">
+                <img src="https://www.scottspizzatours.com/wp-content/uploads/2020/04/pizzeria-feature-image.jpg" width="auto" height="150">
+            </div>
+
+            <div class="column">
+                <img src="https://media-cdn.tripadvisor.com/media/photo-s/19/76/f0/71/pizze-varie-di-gianni.jpg" width="auto" height="150">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <img src="https://www.akcrust.com/hubfs/Blog_Images/people-eating-pizza.jpg" width="auto" height="150">
+            </div>
+
+            <div class="column">
+                <img src="https://media.istockphoto.com/id/1343561122/photo/close-up-of-a-young-group-of-friends-passing-and-serving-food-while-enjoying-together-they.jpg?s=612x612&w=0&k=20&c=NC76E7U2bj3lm7smI_rAxQ02sxn0bLxLWVL-fAtVtRI=" width="auto", height="150">
+            </div>
+
+            <div class="column">
+                <img src="https://cdn.winsightmedia.com/platform/files/public/cspdn/600x450/pizza-people-eating-885.jpg" width="auto" height="150">
+            </div>
+        </div>
+
+    </div>
+</body>
+
+<br>
+<br>
+<br>
+
+<footer>
+    <div>
+        <img src="https://www.pngkey.com/png/full/422-4229878_delicious-pizza-logo-delicious-vinyl-pizza.png" height="100", width="100" class =foot>
+    </div>
+    
+    <br>
+    <p> Phone: (123) 456-7890 </p>
+    <p> Address: 100 N Local St. Austin, TX </p>
+    <p> Ask about delivery options!</p>
+    <p> Please call ahead for orders of 5 or more pizzas</p>
+</footer>
 {% endblock content %}
